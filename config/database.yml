@@ -26,13 +26,13 @@ development:
   password: "0000"
   host: localhost
   port: 5433
-  
-test:
-  <<: *default
-  database: crypto_wallet_test
+#
+# test:
+#   <<: *default
+#  database: crypto_wallet_test
 
-production:
-  <<: *default
-  database: crypto_wallet_production
-  username: crypto_wallet
-  password: <%= ENV['CRYPTO_WALLET_DATABASE_PASSWORD'] %>
+#production:
+#  <<: *default
+#  database: crypto_wallet_production
+#  username: crypto_wallet
+#  password: <%= ENV['CRYPTO_WALLET_DATABASE_PASSWORD'] %>
